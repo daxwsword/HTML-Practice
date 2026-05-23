@@ -18,13 +18,23 @@
             <h1>
                 Hello World!
             </h1>
-            <a href="linked.html">Click for Link</a>
-            <br>
             <p>
-                <form action="linked.html">
+                <form>
                     <label for="password">Password:</label>
                     <input type="password" id="password">
-                    <input type="submit">
+                    <button type="button" onclick="jstester()">Submit</button>
+                    <script>
+                        function jstester() {
+                            const truePassword = "Sword33"
+                            const input = document.getElementById("password").value
+                            if (input == truePassword) {
+                                window.location.href="linked.html"
+                            } else {
+                                alert("Incorrect Password")
+                                document.getElementById("password").value = ""
+                            }
+                        }
+                    </script>
                 </form>
             </p>
         </body>
