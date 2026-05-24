@@ -14,3 +14,6 @@ function jstester() {
             document.getElementById("password").value = ""
     }
 }
+function writesomething() {
+    alert("awaiting implementation")
+}
